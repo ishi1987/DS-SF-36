@@ -1,16 +1,16 @@
 digraph Tree {
 node [shape=box, style="filled", color="black"] ;
-0 [label="name_begins_with_A <= 0.5\ngini = 0.4688\nsamples = 8\nvalue = [3, 5]", fillcolor="#399de566"] ;
-1 [label="cat <= 0.5\ngini = 0.4082\nsamples = 7\nvalue = [2, 5]", fillcolor="#399de599"] ;
+0 [label="NBA <= 0.5\nmse = 0.0085\nsamples = 87000\nvalue = 0.0085", fillcolor="#e5813900"] ;
+1 [label="FIRSTPURCHASEGMS <= 30538.0\nmse = 0.0066\nsamples = 65066\nvalue = 0.0066", fillcolor="#e5813900"] ;
 0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
-2 [label="gini = 0.0\nsamples = 4\nvalue = [0, 4]", fillcolor="#399de5ff"] ;
+2 [label="mse = 0.0066\nsamples = 65061\nvalue = 0.0066", fillcolor="#e5813900"] ;
 1 -> 2 ;
-3 [label="small <= 0.5\ngini = 0.4444\nsamples = 3\nvalue = [2, 1]", fillcolor="#e581397f"] ;
+3 [label="mse = 0.16\nsamples = 5\nvalue = 0.2", fillcolor="#e5813932"] ;
 1 -> 3 ;
-4 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0]", fillcolor="#e58139ff"] ;
-3 -> 4 ;
-5 [label="gini = 0.5\nsamples = 2\nvalue = [1, 1]", fillcolor="#e5813900"] ;
-3 -> 5 ;
-6 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0]", fillcolor="#e58139ff"] ;
-0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+4 [label="FIRSTPURCHASEGMS <= 21486.5\nmse = 0.014\nsamples = 21934\nvalue = 0.0142", fillcolor="#e5813902"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="mse = 0.0139\nsamples = 21933\nvalue = 0.0141", fillcolor="#e5813902"] ;
+4 -> 5 ;
+6 [label="mse = 0.0\nsamples = 1\nvalue = 1.0", fillcolor="#e58139ff"] ;
+4 -> 6 ;
 }
